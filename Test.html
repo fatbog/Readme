@@ -8,39 +8,94 @@
 
 <body>
 <div class="container">
-<h1>PROGRESS</h1>
-<h2>BUSINESS COMPANY</h2>
+  <h1>PROGRESS</h1>
+  <h2>BUSINESS COMPANY</h2>
 <ul>
- <li><a href="#">CONTACTS</a>
-<p>OUR ADDRESS</p><img src="images\envelope.PNG"  width="35"/></li>
- <li><a href="#">PRODUCTS</a>
-<p>THE BEST</p><img src="images\settings.PNG" width="35"/></li>
-   <li><a href="#">SERVICES</a>
-<p>FOR YOU</p><img src="images\paper.PNG" width="35"/></li>
-   <li><a href="#">NEWS</a>
-<p>FRESH</p><img src="images\pencil.PNG" width="35"/></li>
-  <li><a href="#">HOME</a>
-<p>WELCOME!</p><img src="images\home.PNG"  width="35"/></li>
+   <li><a id="hover" href="#">CONTACTS</a>
+    <p>OUR ADDRESS</p><img class= "icon" src="images\envelope.PNG"  width="40"/></li>
+  <li><a id="hover" href="#">PRODUCTS</a>
+    <p>THE BEST</p><img class= "icon" src="images\settings.PNG" width="40"/></li>
+   <li><a id="hover" href="#">SERVICES</a>
+    <p>FOR YOU</p><img class= "icon" src="images\paper.PNG" width="40"/></li>
+   <li><a id="hover" href="#">NEWS</a>
+    <p>FRESH</p><img class= "icon" src="images\pencil.PNG" width="40"/></li>
+  <li><a id="hover" href="#">HOME</a>
+    <p>WELCOME!</p><img class= "icon" src="images\home.PNG"  width="40"/></li>
 </ul>
+</div>
 
 <div class="bg">
-  <img class="mySlides" src="images\globe12.PNG"  height="100%" width="100%"/>
-  <img class="mySlides" src="images\mar2.GIF"  height="100%" width="100%"/>
-  <img class="mySlides" src="images\mar1.PNG"  height="100%" width="100%"/>
-   <img class="mySlides" src="images\sim.GIF"  height="100%" width="100%"/>
-   <img class="mySlides" src="images\pot.PNG"  height="100%" width="100%"/>
+  <img class="mySlides" src="images\globe12.PNG"/>
+  <img class="mySlides" src="images\mar2.GIF" />
+  <img class="mySlides" src="images\but.GIF" />
+   <img class="mySlides" src="images\sim.GIF"/>
+   <img class="mySlides" src="images\pot.PNG"/>
 
      
          <div id="span">
-          <span class="w3-badge" onclick="currentDiv(1)">&#9899</span>
-          <span class="w3-badge" onclick="currentDiv(2)">&#9899</span>
-          <span class="w3-badge" onclick="currentDiv(3)">&#9899</span>
-           <span class="w3-badge" onclick="currentDiv(4)">&#9899</span>
-            <span class="w3-badge" onclick="currentDiv(5)">&#9899</span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+           <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
          </div>
        </div>
 
-   <!--    <script>
+<!-- Start CSS of Button-->
+                                          <style>
+.w3-badge, .w3-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+   
+}
+
+.w3-badge {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+  border-radius: 50%;
+}
+
+.w3-transparent, .w3-hover-none:hover {
+    background-color: #C2C2C2!important;
+}
+.w3-border {
+    border: 1px solid #ccc!important;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.w3-white, .w3-hover-white:hover {
+    color: #000!important;
+    background-color: #66fffb!important;
+}
+
+.w3-center {
+    text-align: center!important;
+}
+
+.w3-large {
+    font-size: 18px!important;
+}
+
+.w3-badge {
+  : center;
+    cursor:pointer
+}
+                                            </style>
+<!-- End of CSS of Button-->
+
+
+   <!-- for moving images
+     
+     
+        <script>
 var slideIndex = 0;
 showSlides();
 
@@ -86,15 +141,14 @@ function showDivs(n) {
      x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-badge", "");
+     dots[i].className = dots[i].className.replace(" w3-white", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-badge";
+  dots[slideIndex-1].className += " w3-white";
 }
 </script>
 
-</div>
-</div>
+     
 
 </body> 
 </html>
