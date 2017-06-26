@@ -20,7 +20,6 @@ h2{
     float: left;
     height: 30px;
     width: 300px;
-    display: inline;
     position: relative;
 }
 
@@ -28,7 +27,6 @@ h2{
 li{
    font-weight: bold;
    float: right;
-   display: inline;
    height: 70px;
    margin: 0 3%;
    margin-top: -67px;
@@ -53,45 +51,56 @@ a{
 
 
 a:hover, a:active {
-    color: #A4DD7A;
+    color: #D3D3D3;
     font-size: 18px; 
     padding: 20px 0px 20px 0px;
 }
 
 
 body{
-   
     margin-top: 20px;
     background-color: black;
+    position: relative;
 }
 
 
-div.bg img{
-    height: 450px;
-    width: 500px;
-	margin-top: 75px;
-	margin-left:30px;
-}
-
-
-.bg{
+div .bg{
   margin-top: 80px;
-  position: relative;
   height: 600px;
   width: 100.6%;
-    background: #b4e391; 
-    background: -moz-radial-gradient(center, ellipse cover, #b4e391 0%, #61c419 74%, #b4e391 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, #b4e391 0%,#61c419 74%,#b4e391 100%); 
-    background: radial-gradient(ellipse at center, #b4e391 0%,#61c419 74%,#b4e391 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=1 );
+  background-color: green;
+ 
+ }
 
-}
+ img .mySlides{
+     position: relative;
+ }
 
 .container{
-	width: 1300px;
+    padding-right: 10px;
+	width: 1400px;
 	margin: 0 auto;
 }
 
+.w3-badge {
+    cursor:pointer
+}
+
+
+div #span{
+    top: 730px;
+    right: 1000px;
+    position: absolute;
+     
+}
+
+.w3-badge:hover{
+    color:red;
+    position: center;
+}
+
+
+/*
 .provide{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
@@ -180,8 +189,8 @@ div.bg img{
     bottom: 340px;
     left: 885px;
 }
+*/
 
-/*
 *{
 border: 1px dashed blue;
-}*/
+}
