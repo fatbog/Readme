@@ -73,8 +73,17 @@ div .bg{
  }
 
  img .mySlides{
-     position: relative;
+     position: absolute;
  }
+
+ 
+div #span{
+    position: absolute;
+    font-size: 50px;
+    top: 90%;
+    right: 39%;
+     
+}
 
 .container{
     padding-right: 10px;
@@ -87,12 +96,6 @@ div .bg{
 }
 
 
-div #span{
-    top: 730px;
-    right: 1000px;
-    position: absolute;
-     
-}
 
 .w3-badge:hover{
     color:red;
@@ -189,8 +192,8 @@ div #span{
     bottom: 340px;
     left: 885px;
 }
-*/
+
 
 *{
 border: 1px dashed blue;
-}
+}*/

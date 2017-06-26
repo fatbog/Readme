@@ -25,18 +25,45 @@
 
 <div class="bg">
   <img class="mySlides" src="images\globe12.PNG"  height="100%" width="100%"/>
-  <img class="mySlides" src="images\mar.PNG"  height="100%" width="100%"/>
+  <img class="mySlides" src="images\mar2.GIF"  height="100%" width="100%"/>
   <img class="mySlides" src="images\mar1.PNG"  height="100%" width="100%"/>
+   <img class="mySlides" src="images\sim.GIF"  height="100%" width="100%"/>
+   <img class="mySlides" src="images\pot.PNG"  height="100%" width="100%"/>
 
      
          <div id="span">
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)">&#9899</span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)">&#9899</span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)">&#9899</span>
+          <span class="w3-badge" onclick="currentDiv(1)">&#9899</span>
+          <span class="w3-badge" onclick="currentDiv(2)">&#9899</span>
+          <span class="w3-badge" onclick="currentDiv(3)">&#9899</span>
+           <span class="w3-badge" onclick="currentDiv(4)">&#9899</span>
+            <span class="w3-badge" onclick="currentDiv(5)">&#9899</span>
          </div>
-    
-   
- </div>
+       </div>
+
+       <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("w3-badge");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<!--
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -59,12 +86,13 @@ function showDivs(n) {
      x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
+     dots[i].className = dots[i].className.replace(" w3-badge", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+  dots[slideIndex-1].className += " w3-badge";
 }
 </script>
+-->
 </div>
 </div>
 
